@@ -1,3 +1,9 @@
+/* VARIABLES */
+:root {
+    --dark-grey: #222222;
+    --light-grey: #4a4a4a;
+}
+
 /* RESET */
 * {
     padding: 0;
@@ -12,6 +18,7 @@ img {
 /* GENERAL */
 body {
     background-color: black;
+    font-family: sans-serif;
 }
 
 .flex {
@@ -42,17 +49,50 @@ body {
     flex-wrap: wrap;
 }
 
+/* Cards */
+.col {
+    width: calc(100% / 7);
+    padding: 5px;
+}
+
+.image {
+    position: relative;
+}
+
+.tag {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    font-size: .8rem;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* Controls panel */
-.panel {
+ .panel {
     height: 70px;
     /* debug */
     border: 2px solid gold;
 }
 
-/* Cards */
-.col {
-    width: calc(100% / 7);
-    padding: 5px;
+.my-controls {
+    width: 20%;
     /* debug */
-    border: 1px solid red;
+    border: 1px solid violet;
+    color: white;
+}
+
+.controls {
+    flex-grow: 1;
+}
+
+.end-meeting {
+    width: 10%;
+    background-color: var(--light-grey);
+    color: red;
+    line-height: 70px;
+    text-align: center;
+    /* debug */
+    border: 1px solid violet;
 }
