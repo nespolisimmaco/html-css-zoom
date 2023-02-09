@@ -27,6 +27,22 @@ body {
 
 /* MAIN */
 /* Main container */
+.change-view {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+}
+
+.speaker-view, .maximize {
+    display: inline-block;
+    background-color: var(--light-grey);
+    color: white;
+    padding: 5px;
+    font-size: .7rem;
+    border-radius: 5px;
+}
+
 .wrapper {
     height: calc(100vh - 70px);
     width: 100%;
