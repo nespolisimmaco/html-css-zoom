@@ -1,0 +1,58 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* GENERAL */
+body {
+    background-color: black;
+}
+
+.flex {
+    display: flex;
+}
+
+/* MAIN */
+/* Main container */
+.wrapper {
+    height: calc(100vh - 70px);
+    width: 100%;
+    padding-top: 40px;
+    /* debub */
+    border: 5px dashed white;
+    color: white;
+}
+
+/* Inner container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    /* debug */
+    min-height: 600px;
+    border: 1px dashed yellowgreen;
+}
+
+.box.flex {
+    flex-wrap: wrap;
+}
+
+/* Controls panel */
+.panel {
+    height: 70px;
+    /* debug */
+    border: 2px solid gold;
+}
+
+/* Cards */
+.col {
+    width: calc(100% / 7);
+    padding: 5px;
+    /* debug */
+    border: 1px solid red;
+}
