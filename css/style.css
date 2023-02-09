@@ -31,8 +31,6 @@ body {
     height: calc(100vh - 70px);
     width: 100%;
     padding-top: 40px;
-    /* debub */
-    border: 5px dashed white;
     color: white;
 }
 
@@ -40,9 +38,6 @@ body {
 .container {
     width: 90%;
     margin: 0 auto;
-    /* debug */
-    min-height: 600px;
-    border: 1px dashed yellowgreen;
 }
 
 .box.flex {
@@ -72,27 +67,58 @@ body {
 /* Controls panel */
  .panel {
     height: 70px;
-    /* debug */
-    border: 2px solid gold;
+    background-color: var(--dark-grey);
 }
 
+/* Mute ans stop video */
 .my-controls {
-    width: 20%;
-    /* debug */
-    border: 1px solid violet;
+    width: 15%;
+    align-items: center;
     color: white;
 }
 
-.controls {
+/* All controls */
+.controls.flex {
     flex-grow: 1;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
 
+/* End meeting */
 .end-meeting {
-    width: 10%;
+    width: 8%;
     background-color: var(--light-grey);
     color: red;
+    font-size: .7rem;
     line-height: 70px;
     text-align: center;
-    /* debug */
-    border: 1px solid violet;
+    padding: 0 10px;
+}
+
+.end-meeting:hover {
+    cursor: pointer;
+}
+
+/* Buttons */
+.button-control {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.button-control:hover {
+    cursor: pointer;
+}
+
+.button-control i {
+    font-size: 1.5rem;
+    padding-bottom: 8px;
+}
+
+.button-control div {
+    font-size: .8rem;
+}
+
+.button-control.share-screen i {
+    color: greenyellow;
 }
